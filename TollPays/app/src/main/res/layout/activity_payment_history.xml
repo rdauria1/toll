@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_payment_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEDED"
+    android:orientation="vertical"
+    tools:context="com.amaxzadigital.tollpays.paymenthistory.PaymentHistoryActivity">
+
+    <LinearLayout
+        android:id="@+id/llPaymentHistoryPlaceHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivPaymentHistoryPlaceHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ph_no_payment" />
+
+        <TextView
+            android:id="@+id/tvPaymentHistoryPlaceHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Payment History"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvPaymentHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEDED"
+        android:divider="@null"></ListView>
+
+
+</LinearLayout>

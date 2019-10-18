@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="android:textViewStyle">@style/RobotoTextViewStyle</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="NumberPickerText">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/bg_actionbar</item>
+        <item name="elevation">10dp</item>
+    </style>
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/lato_regular</item>
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="values" format="reference" />
+        <attr name="android:ellipsize" />
+        <attr name="android:marqueeRepeatLimit" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="sideItems" format="integer" />
+    </declare-styleable>
+
+    <attr name="horizontalPickerStyle" format="reference" />
+
+
+</resources>

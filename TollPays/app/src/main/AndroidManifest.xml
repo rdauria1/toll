@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amaxzadigital.tollpays">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleInstance"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".rentingborrowing.TimeRequestRejectedActivity">
+
+        </activity>
+        <activity android:name=".rentingborrowing.SharedVehicleHistoryData" />
+        <activity android:name=".rentingborrowing.TimeIncrementRequest" />
+        <activity android:name=".rentingborrowing.RenterVehicleRequest" />
+        <activity
+            android:name=".rentingborrowing.ChooseVehicle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentingborrowing.SelectTimeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentingborrowing.TermsAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentingborrowing.RentingBorrowingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.FullImagePreview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.FilterByActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.RequestedHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.RequestSubmissionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.ConfirmPersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.AddDocumentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.SelectAgency"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".discountprofile.ProfileFormActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".discountprofile.DiscountRequestActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCHJb3jI54YzNbbIfeWyj0tkx5WpCTXV5g" /> <!-- AIzaSyDsENneF_AXpUr7y-3JYohSx3wn0bs9EyE -->
+        <!--
+             Release Key
+                    AIzaSyDcEP-V5oMSnHpP9BbmQdgOM06xFK5nI6M
+        -->
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".discountprofile.SelectVehicleProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".checkin.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".checkin.OtherActivity" />
+        <activity
+            android:name=".login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.TouchIdLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notifications.NotificationScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paymenthistory.PaymentDetailsCtzActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".login.WelcomeBackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".settings.AuthorizationActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".settings.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".settings.PasscodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".paymenthistory.PaymentHistoryRentingBorrowingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".users.UsersActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".users.ManageVehicleActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".users.UsersActivity" />
+        </activity>
+        <activity
+            android:name=".users.AddUserActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".users.UsersActivity" />
+        </activity>
+        <activity
+            android:name=".paymenthistory.PaymentHistoryActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".paymenthistory.PaymentDetailsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="paymenthistory.PaymentHistoryActivity" />
+        </activity>
+        <activity
+            android:name=".paymenthistory.FilterPaymentActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="paymenthistory.PaymentHistoryActivity" />
+        </activity>
+        <activity
+            android:name=".helpcenter.HelpCenterActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".helpcenter.ContactUsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="helpcenter.HelpCenterActivity" />
+        </activity>
+        <activity
+            android:name=".helpcenter.FAQsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="helpcenter.HelpCenterActivity" />
+        </activity>
+        <activity
+            android:name=".messages.MessagesActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="helpcenter.HelpCenterActivity" />
+        </activity>
+        <activity
+            android:name=".messages.MessagesDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages.MessagesActivity" />
+        </activity>
+        <activity
+            android:name=".violations.ViolationsActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".violations.ViolationDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="violations.ViolationsActivity" />
+        </activity>
+        <activity
+            android:name=".violations.ViolationPaymentActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="violations.ViolationsActivity" />
+        </activity>
+        <activity
+            android:name=".paymentoption.PaymentOptionActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="violations.ViolationPaymentActivity" />
+        </activity>
+        <activity
+            android:name=".paymentoption.AddCardActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".paymentoption.PaymentOptionActivity" />
+        </activity>
+        <activity
+            android:name=".checkin.SelectVehicleActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity android:name=".discountprofile.EditProfileFormActivity" />
+        <activity
+            android:name=".checkin.AddVehicleActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.SelectVehicleActivity" />
+        </activity>
+        <activity
+            android:name=".checkin.CurrentBalanceActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.MainActivity" />
+        </activity>
+        <activity
+            android:name=".checkin.OneTimePaymentActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.CurrentBalanceActivity" />
+        </activity>
+        <activity
+            android:name=".checkin.CheckInActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".checkin.CurrentBalanceActivity" />
+        </activity>
+        <activity
+            android:name=".checkin.CongratulationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentingborrowing.SelectVehicleRentingBorrowingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".rentingborrowing.VehicleForRentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".settings.ChangePasscodeActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".messages.ViewImageActivity" />
+        <activity android:name=".users.EditUserActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".users.UsersActivity" />
+        </activity>
+        <activity android:name=".helpcenter.KnowledgeBaseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="helpcenter.HelpCenterActivity" />
+        </activity>
+        <activity android:name=".helpcenter.ElearningActivity" />
+        <activity android:name=".helpcenter.ElearningDetailActivity" />
+        <activity android:name=".conflictmanagement.TollFeesPoolingActivity" />
+        <activity android:name=".conflictmanagement.EnableUnattendedAccessActivity" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".conflictmanagement.AddNonSmartPhoneUser" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".checkin.EditVehicleActivity" />
+
+        <receiver
+            android:name=".checkin.MapFragment$AlarmManagerReceiver"
+            android:enabled="true" />
+    </application>
+
+</manifest>

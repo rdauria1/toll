@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "69655813140",
+    "firebase_url": "https://toll-pays.firebaseio.com",
+    "project_id": "toll-pays",
+    "storage_bucket": "toll-pays.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69655813140:android:a622e656ddcf1072",
+        "android_client_info": {
+          "package_name": "com.amaxzadigital.tollpays"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69655813140-o69jratihs166ni9dir8iv31so89hgmj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amaxzadigital.tollpays",
+            "certificate_hash": "7c9864e753502dc2dca38b0910fa7ff2250bba0b"
+          }
+        },
+        {
+          "client_id": "69655813140-ghla5b0u4odl8m4f38icjl3nn9ar3pvu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfukxnLWv34-_YJaYY-hjC5e8xkLnGjiY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69655813140-ghla5b0u4odl8m4f38icjl3nn9ar3pvu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

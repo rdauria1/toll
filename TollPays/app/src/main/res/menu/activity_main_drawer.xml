@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_checkin"
+            android:icon="@drawable/svg_ic_menu_checkin"
+            android:title="@string/check_in" />
+
+        <item
+            android:id="@+id/nav_toll_fees_pooling"
+            android:icon="@drawable/svg_ic_menu_pooling"
+            android:title="@string/toll_fees_pooling" />
+
+        <item
+            android:id="@+id/nav_violations"
+            android:icon="@drawable/svg_ic_menu_violation"
+            android:title="@string/violations"
+            app:actionViewClass="android.widget.TextView" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/svg_ic_menu_payment"
+            android:title="@string/payment_history" />
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/svg_ic_menu_users"
+            android:title="@string/users" />
+
+
+        <item
+            android:id="@+id/nav_discount_request"
+            android:icon="@drawable/svg_ic_discount_request"
+            android:title="@string/discount_request" />
+        <item
+            android:id="@+id/nav_renting_borrowing"
+            android:icon="@drawable/svg_ic_discount_request"
+            android:title="Renting / Borrowing" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/svg_ic_menu_settings"
+            android:title="@string/settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/svg_ic_menu_helpcenter"
+            android:title="@string/help_center"
+            app:actionViewClass="android.widget.TextView" />
+
+        <item
+            android:id="@+id/nav_admin_panel"
+            android:icon="@drawable/svg_ic_menu_dashboard"
+            android:title="@string/admin_panel"
+            app:actionViewClass="android.widget.TextView" />
+    </group>
+</menu>

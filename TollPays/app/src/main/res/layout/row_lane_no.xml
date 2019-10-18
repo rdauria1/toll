@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp">
+
+    <!--<View-->
+        <!--android:id="@+id/vSpaceLeft"-->
+        <!--android:layout_width="165dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_height="1dp"/>-->
+
+    <TextView
+            android:id="@+id/tvLaneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="1"
+        android:backgroundTint="#ebebeb"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <!--<View-->
+        <!--android:id="@+id/vSpaceRight"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:visibility="gone"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:layout_height="1dp"/>-->
+
+</LinearLayout >

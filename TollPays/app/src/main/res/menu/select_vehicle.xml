@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/svg_ic_search"
+        android:iconTint="#000000"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_addvehicle"
+        android:icon="@drawable/svg_ic_plus"
+        android:iconTint="#000000"
+        android:title="Add Vehicle"
+        app:showAsAction="always" />
+</menu>

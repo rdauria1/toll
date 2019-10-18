@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#EEEDED" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivCongratulationsVehicleImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#efefef"
+            android:scaleType="centerCrop" />
+
+        <CheckBox
+            android:id="@+id/cbManageVehicle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_white_check"
+            android:button="@drawable/custom_checkbox"
+            android:clickable="false" />
+
+        <View
+            android:id="@+id/vwVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#66F04E63"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="16dp"
+            android:text="Waiting for owner \nacknowledge"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="36dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rLVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tvCongratulationsVehicleNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Plate Number"
+            android:textColor="@color/colorTextDark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCongratulationsVehicleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/tvCongratulationsVehicleNo"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:layout_toStartOf="@+id/ivedit"
+            android:layout_toLeftOf="@+id/ivedit"
+            android:layout_toEndOf="@+id/tvCongratulationsVehicleNo"
+            android:layout_toRightOf="@+id/tvCongratulationsVehicleNo"
+            android:singleLine="true"
+            android:text="Vehicle Type"
+            android:textColor="@color/colorTextLight"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvCongatulationVehicleAxleType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCongratulationsVehicleType"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@+id/ivedit"
+            android:text="Vehicle Type Axle"
+            android:textColor="@color/colorTextLight"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/ivedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_toStartOf="@+id/ivdelete"
+            android:layout_toLeftOf="@+id/ivdelete"
+            android:padding="6dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/svg_ic_edit" />
+
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:padding="6dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/svg_ic_delete" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCongatulationVehicleAxleType"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="18dp"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCongratulationsYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2011"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCongratulationsModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mustang"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Model"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCongratulationsMake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ford"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCongratulationsState"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NY"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
